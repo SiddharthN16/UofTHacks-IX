@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="{{ url_for("home")}}" method="post">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="f-name" placeholder="First Name" />
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="l-name" placeholder="Last Name" />
+
+    <label for="student-num">Student Number:</label>
+    <input type="number" id="student-num" name="num" placeholder="Student #" />
+
+    <button type="submit">Login</button>
+  </body>
+</html>
